@@ -1,0 +1,179 @@
+@media(min-width:768px) {
+    .navbar-mobile {
+        display: none;
+    }
+    header {
+        padding: 0 10%;
+    }
+    .navbar-desk {
+        display: flex;
+        align-items: center;
+        padding: 1em 0;
+        .logo-desk {
+            display: unset;
+        }
+        nav {
+            display: flex;
+            width: 100%;
+            align-items: center;
+        }
+        ul {
+            width: 100%;
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            padding-left: 1em;
+            justify-content: space-between;
+        }
+        hr {
+            display: none;
+        }
+        a {
+            text-decoration: none;
+            color: var(--paracol);
+        }
+        a:hover {
+            color: var(--headcol);
+        }
+        .get-started {
+            margin: 0;
+            padding: .5em 1.5em;
+            color: white;
+        }
+        .get-started:hover {
+            color: white;
+        }
+        .login-signup,
+        .primary-nav {
+            display: flex;
+            align-items: center;
+            width: 50%;
+        }
+        .login-signup {
+            width: max-content;
+        }
+        li {
+            padding: 0 1em;
+        }
+    }
+    .hero {
+        padding: 0 10%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-flow: dense;
+        .hero-img {
+            grid-column: 2/3;
+            width: 145%;
+        }
+        .intro {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            grid-column: 1/2;
+            text-align: left;
+            .main-heading {
+                text-align: left;
+                font-size: 4rem;
+                padding-top: 0;
+            }
+            .content {
+                text-align: left;
+                padding-right: 3em;
+            }
+            .get-started {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .features {
+        padding: 0 10%;
+    }
+    .input-btn {
+        background: url("../images/bg-shorten-desktop.svg") hsl(257, 27%, 26%);
+        background-size: cover;
+        display: grid;
+        top: -10%;
+        left: 10%;
+        right: 10%;
+        grid-template-columns: 3fr 1fr;
+        padding: 4em;
+        #convert {
+            width: 100%;
+            margin: 0;
+        }
+        #input {
+            padding: 1em 1em;
+            font-size: 1.5rem;
+        }
+    }
+    .features {
+        margin-top: 12em;
+    }
+    .features-grid {
+        padding: 8em 0;
+        grid-template-columns: 1fr min-content 1fr min-content 1fr;
+        grid-template-rows: 1fr min-content;
+    }
+    .advanced {
+        grid-column: 2/5;
+        padding-bottom: 0;
+    }
+    .cta {
+        background: url("../images/bg-boost-desktop.svg") hsl(257, 27%, 26%);
+        background-size: cover;
+        .heading {
+            font-size: 2.5rem;
+        }
+        .get-started {
+            margin-bottom: 0;
+        }
+    }
+    .feature,
+    .line {
+        grid-row: 2/3;
+    }
+    .line {
+        width: 2em;
+        height: .8em;
+    }
+    .feature {
+        display: unset;
+        text-align: left;
+        .content {
+            text-align: left;
+        }
+        h3 {
+            text-align: left;
+        }
+    }
+    .detailed-rec {
+        margin-top: 4em;
+    }
+    .fully-cust {
+        margin-top: 8em;
+    }
+    footer {
+        padding: 3em 10%;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+    .footer-nav {
+        grid-column: 3/6;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: left;
+        .content {
+            text-align: left;
+        }
+    }
+    .social-links {
+        margin: 0;
+        min-width: 100%;
+        justify-content: space-around;
+        padding-top: 1.5em;
+    }
+    .attribution {
+        grid-column: 1/-1;
+    }
+}
